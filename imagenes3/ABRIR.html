@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore - Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-cube"></i> <span>NovaStore</span>
+        </div>
+        <nav class="nav">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#caracteristicas">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="cart-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge">3</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="tag">Nueva Colección 2026</span>
+            <h1>Diseño y Tecnología en Movimiento</h1>
+            <p>Explora nuestra selección exclusiva de gadgets y accesorios diseñados para elevar tu productividad y estilo de vida diario.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo" class="btn btn-primary">Ver Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#caracteristicas" class="btn btn-secondary">Saber Más</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card c1">
+                <i class="fa-solid fa-headphones"></i>
+                <div>
+                    <h4>Audio Espacial</h4>
+                    <p>Sonido envolvente</p>
+                </div>
+            </div>
+            <div class="floating-card c2">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                    <h4>Carga Rápida</h4>
+                    <p>100W GaN Pro</p>
+                </div>
+            </div>
+            <div class="hero-orb"></div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalogo">
+        <div class="section-title">
+            <h2>Nuestro Catálogo</h2>
+            <p>Filtra por categoría y descubre piezas únicas con animaciones fluidas.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="audio">Audio</button>
+            <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+            <button class="filter-btn" data-filter="smart">Smart Tech</button>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="audio">
+                <div class="product-badge">Nuevo</div>
+                <div class="product-image">
+                    <div class="img-placeholder bg-audio">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Audio</span>
+                    <h3>Auriculares Nova Apex</h3>
+                    <p class="description">Cancelación activa de ruido y batería de 40 horas.</p>
+                    <div class="product-footer">
+                        <span class="price">$299.00</span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="accesorios">
+                <div class="product-badge discount">-20%</div>
+                <div class="product-image">
+                    <div class="img-placeholder bg-acc">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Accesorios</span>
+                    <h3>Soporte ErgoLift Pro</h3>
+                    <p class="description">Aluminio aeroespacial ajustable para portátiles.</p>
+                    <div class="product-footer">
+                        <span class="price">$79.00 <del>$99.00</del></span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="smart">
+                <div class="product-badge">Popular</div>
+                <div class="product-image">
+                    <div class="img-placeholder bg-smart">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Smart Tech</span>
+                    <h3>Smartwatch Horizon X</h3>
+                    <p class="description">Monitoreo de salud avanzado y pantalla AMOLED.</p>
+                    <div class="product-footer">
+                        <span class="price">$249.00</span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="accesorios">
+                <div class="product-image">
+                    <div class="img-placeholder bg-acc2">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Accesorios</span>
+                    <h3>Cargador GaN 100W</h3>
+                    <p class="description">Carga rápida simultánea para 4 dispositivos USB-C.</p>
+                    <div class="product-footer">
+                        <span class="price">$69.00</span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="audio">
+                <div class="product-badge">Top</div>
+                <div class="product-image">
+                    <div class="img-placeholder bg-audio2">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Audio</span>
+                    <h3>Altavoz Pulse 360</h3>
+                    <p class="description">Resistente al agua IP67 con luces LED dinámicas.</p>
+                    <div class="product-footer">
+                        <span class="price">$149.00</span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="smart">
+                <div class="product-badge">Nuevo</div>
+                <div class="product-image">
+                    <div class="img-placeholder bg-smart2">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <div class="product-actions">
+                        <button title="Añadir a favoritos"><i class="fa-regular fa-heart"></i></button>
+                        <button title="Vista rápida"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="category">Smart Tech</span>
+                    <h3>Vision AR Glasses</h3>
+                    <p class="description">Realidad aumentada ligera con audio integrado.</p>
+                    <div class="product-footer">
+                        <span class="price">$499.00</span>
+                        <button class="btn-buy">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Experience Section -->
+    <section class="features" id="caracteristicas">
+        <div class="section-title">
+            <h2>Por qué elegir NovaStore</h2>
+            <p>Innovación respaldada por la mejor experiencia de usuario.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Envío Global Express</h3>
+                <p>Recibe tus productos en la puerta de tu casa en tiempo récord y con seguro incluido.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Garantía de 2 Años</h3>
+                <p>Soporte técnico directo y reemplazo sin complicaciones ante cualquier eventualidad.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                <h3>Devoluciones Fáciles</h3>
+                <p>30 días para enamorarte de tu compra o te devolvemos el 100% de tu dinero.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-cube"></i> <span>NovaStore</span>
+                </div>
+                <p>Elevando tus sentidos a través del diseño y la tecnología avanzada.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#caracteristicas">Experiencia</a>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NovaStore. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
